@@ -1,0 +1,422 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+  background-size: cover;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  background-image: linear-gradient(174deg, rgba(0, 0, 0, 0.95) 0%, rgba(60, 60, 112, 0.95) 66%, rgba(37, 85, 153, 0.950105042) 100%), url(../images/gifLogo.gif);
+  background-position: center;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.logo {
+  width: 200px;
+  display: flex;
+  margin: 10px 0px 0px 0px;
+}
+
+main {
+  display: flexbox;
+  margin: 100px;
+  text-align: center;
+  justify-content: center;
+}
+main h1 {
+  justify-content: center;
+  font-size: calc(15px + 1v);
+  margin: 20px;
+}
+main p {
+  margin: 30px;
+}
+
+.logo {
+  width: 100px;
+  display: flex;
+  margin: 10px 0px 0px 0px;
+}
+
+main {
+  margin-top: 80px;
+}
+main h1 {
+  justify-content: center;
+  font-size: calc(15px + 1v);
+}
+main #pIndex {
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+main #pIndex span {
+  display: none;
+}
+
+h2 {
+  display: flex;
+  text-align: center;
+  font-size: 15px;
+  justify-content: center;
+}
+
+.turnoYa {
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+  border: 4px solid white;
+  background-color: white;
+  border-radius: 55px;
+  font-size: 15px;
+  text-shadow: 2px 2px 5px rgba(58, 53, 53, 0.545);
+}
+
+.obrasSociales {
+  display: grid;
+  justify-content: center;
+}
+.obrasSociales img {
+  width: 150px;
+  justify-content: space-around;
+  filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.704));
+}
+
+.marcas {
+  display: grid;
+  width: 30%;
+  height: 30%;
+  justify-content: space-around;
+  width: auto;
+}
+.marcas img {
+  width: 150px;
+  display: inline;
+  align-items: center;
+  filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.704));
+}
+
+@media screen and (min-width: 800px) {
+  .logo {
+    width: 200px;
+    display: flex;
+    margin: 10px 0px 0px 0px;
+  }
+  main {
+    display: flexbox;
+    margin: 100px;
+    text-align: center;
+    font-size: 150%;
+  }
+  main h1 {
+    justify-content: center;
+    font-size: calc(15px + 1v);
+    margin: 20px;
+  }
+  main #pIndex {
+    margin-top: 30px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .turnoYa {
+    display: inline;
+    text-align: center;
+    text-decoration: none;
+    border: 10% solid white;
+    background-color: white;
+    border-radius: 50px;
+  }
+  .obrasSociales {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+  }
+  .marcas {
+    width: 30%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+  }
+}
+.casoPre1, .casoPost1 {
+  width: 300px;
+  border-radius: 3px;
+}
+
+.contenedorCasos {
+  margin-left: 300px;
+  margin-right: 300px;
+  font-size: 80%;
+}
+
+.contenedorTexto {
+  display: flex;
+  justify-content: center;
+  color: antiquewhite;
+  gap: 200px;
+}
+
+main.contenedorEquipo {
+  text-shadow: none;
+  font-size: 80%;
+}
+main.contenedorEquipo div.container #contendorCard div.col {
+  width: 100%;
+  display: inline;
+  align-items: center;
+}
+
+.clear-fix:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.card__collection {
+  position: relative;
+  display: block;
+  background: rgba(10, 10, 10, 0.5);
+  padding: 10px;
+  font-family: "Do Hyeon", sans-serif;
+  overflow: hidden;
+}
+.card__collection .cards {
+  display: block;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  background-position: center;
+  margin: 10px;
+}
+
+.cards--two {
+  position: relative;
+  backface-visibility: hidden;
+}
+.cards--two p {
+  position: absolute;
+  top: 83%;
+  left: -100%;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 20px;
+  z-index: 8;
+  transition: all 0.6s ease;
+}
+.cards--two:hover p {
+  left: 8%;
+}
+.cards--two:hover img {
+  transform: translateY(-15px);
+}
+.cards--two:hover .cards--two__rect {
+  top: 75%;
+}
+.cards--two:hover .cards--two__tri {
+  right: -40%;
+}
+.cards--two img {
+  transition: all 0.2s ease;
+}
+.cards--two__tri {
+  border-top: 220px solid transparent;
+  border-bottom: 190px solid transparent;
+  border-right: 288px solid #3C3D71;
+  opacity: 0.9;
+  position: absolute;
+  display: block;
+  top: 0;
+  right: -100%;
+  transition: all 0.3s ease-in-out;
+}
+.cards--two__rect {
+  width: 750px;
+  height: 200px;
+  background: #3C3D71;
+  display: block;
+  position: absolute;
+  top: 175%;
+  left: -78%;
+  transform: rotate(30deg);
+  z-index: 5;
+  opacity: 0.9;
+  transition: all 0.3s ease-in-out;
+}
+
+span.cards--two__tri {
+  display: none;
+}
+
+span.cards--two__tri:hover {
+  display: block;
+}
+
+@media screen and (min-width: 600px) {
+  main.contenedorEquipo {
+    text-shadow: none;
+  }
+  main.contenedorEquipo div.container #contendorCard div.col {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contenedorEquipo {
+    text-align: center;
+    margin-top: 100px;
+    text-shadow: none;
+  }
+  .contenedorEquipo div.col div.card {
+    display: grid;
+    grid-template-columns: repeat(2, 100%);
+    width: 50%;
+  }
+}
+.contenedor {
+  display: inline;
+  gap: 30px;
+  text-shadow: none;
+}
+.contenedor .card {
+  width: 100%;
+}
+.contenedor :hover {
+  box-shadow: 0px 0px 20px 1px whitesmoke;
+  border: 1px solid rgba(255, 255, 255, 0.454);
+}
+
+@media screen and (min-width: 745px) {
+  .contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 50%;
+  }
+  .contenedor .card {
+    width: 100%;
+    text-shadow: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contenedor {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin-left: 0px;
+    font-size: 50%;
+  }
+}
+.mapaChico {
+  display: block;
+}
+
+.mapaSucursal {
+  display: none;
+}
+
+div .contenedorSucursales {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  align-items: center;
+}
+div .contenedorSucursales p {
+  font-size: 7px;
+  text-align: center;
+  padding: 10px;
+}
+div .contenedorMapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+}
+
+div.sucursales {
+  color: white;
+}
+div.sucursales img {
+  width: 160px;
+  margin: auto;
+  border-radius: 2%;
+}
+
+@media screen and (min-width: 600px) {
+  div .contenedorSucursales p {
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+  }
+  div .contenedorMapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .mapaChico {
+    display: none;
+  }
+  .mapaSucursal {
+    display: block;
+  }
+  div .contenedorSucursales {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    align-items: center;
+  }
+  div .contenedorMapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+  }
+  div.sucursales {
+    color: white;
+  }
+  div.sucursales img {
+    width: 300px;
+    margin: auto;
+    border-radius: 2%;
+  }
+}
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 25%);
+  background-color: #212529;
+}
+footer div {
+  display: grid;
+  justify-content: center;
+}
+footer div a {
+  text-decoration: none;
+  color: white;
+  font-size: 11px;
+  margin-left: 10px;
+}
+footer div a span {
+  margin-left: 5px;
+}
+footer div p {
+  font-size: 100%;
+  align-items: center;
+  margin-left: 10px;
+}
+footer div p.derechosReservados {
+  font-size: 8px;
+}
+
+/*# sourceMappingURL=styles.css.map */

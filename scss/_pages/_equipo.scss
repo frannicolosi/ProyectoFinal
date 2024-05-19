@@ -1,0 +1,146 @@
+main.contenedorEquipo{
+    text-shadow: none;
+    font-size: 80%;
+    div.container{
+        #contendorCard{
+            div.col{
+                width: 100%;
+                display: inline;
+                align-items: center;
+               
+            }
+        }
+    }
+} 
+
+.clear-fix:after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+  
+  .img-responsive {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card__collection {
+      position: relative;
+      display: block;
+      background: rgba(10,10,10,.5);
+      padding: 10px;
+      font-family: 'Do Hyeon', sans-serif;
+      overflow: hidden;
+      
+    .cards {
+      
+        display:block;
+        float: left;
+        position: relative;
+        overflow: hidden;
+        background-position: center;
+        margin: 10px;
+    }   
+      }
+    
+    .cards--two {
+        position: relative;
+        backface-visibility: hidden;
+        
+        p {
+          position: absolute;
+          top: 83%;
+          left: -100%;
+          text-transform: capitalize;
+          color: #fff;
+          font-size: 20px;
+          z-index: 8;
+          transition: all .6s ease;
+        }
+        
+        &:hover {
+          
+          p {
+            left: 8%;
+          }
+          
+          img {
+            transform: translateY(-15px);
+          }
+          
+          .cards--two__rect {
+            top: 75%;
+          } 
+          .cards--two__tri {
+            right: -40%; 
+          }
+        }
+        
+        img {
+          transition: all .2s ease;
+        }
+        
+        &__tri {
+          border-top: 220px solid transparent;
+          border-bottom: 190px solid transparent;
+          border-right: 288px solid #3C3D71;
+          opacity: .9;
+          position: absolute;
+          display: block;
+          top: 0;
+          right: -100%;
+          transition: all .3s ease-in-out;
+        }
+        
+        &__rect {
+          width: 750px;
+          height: 200px;
+          background: #3C3D71;
+          display: block;
+          position: absolute;
+          top: 175%;
+          left: -78%;
+          transform: rotate(30deg);
+          z-index: 5;
+          opacity: .9;
+          transition: all .3s ease-in-out;
+        }
+      }
+
+      span.cards--two__tri{
+        display: none;
+    }
+    span.cards--two__tri:hover {
+        display: block;
+
+    }
+
+
+@media screen and (min-width:$tabletWidth){
+    main.contenedorEquipo{
+        text-shadow: none;
+        div.container{
+            #contendorCard{
+                div.col{
+                    width: 50%;
+                   
+                }
+            }
+        }
+    } 
+}
+@media screen and (min-width:$escritorioWidth) {
+.contenedorEquipo{
+    text-align: center;
+    margin-top: 100px;
+    text-shadow: none;
+    div.col{
+       
+        div.card{
+            display:grid;
+            grid-template-columns: repeat(2, 100%);
+            width:50%;
+        }
+    }
+} 
+}

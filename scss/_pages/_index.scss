@@ -1,0 +1,125 @@
+
+
+.logo{
+    width: 100px;
+    display: flex;
+    margin: 10px 0px 0px 0px;    
+    }
+
+main{
+
+    margin-top:80px;
+  
+    
+    h1{
+        justify-content: center;
+        font-size: $titulo;
+       
+    }
+    
+    #pIndex{
+        color: white;
+        
+        text-align: center;
+        justify-content: center;
+        span{
+            display: none;
+        }
+    }
+    
+    
+}   
+
+h2{
+    display: flex;
+    text-align: center;
+    font-size: 15px;
+    justify-content: center;
+}
+.turnoYa{
+    display:inline;
+    text-align: center;
+    text-decoration: none;
+    border: 4px solid white;
+    background-color: white;
+    border-radius: 55px;
+    font-size: 15px;
+    text-shadow: 2px 2px 5px rgba(58, 53, 53, 0.545);
+}
+.obrasSociales{
+    display: grid;
+    justify-content: center;
+    img{
+        width: 150px;
+        justify-content: space-around;
+        filter: $shadowImages;
+    }
+}
+
+.marcas{
+    display: grid;
+    width:30%;
+    height:30%;
+    justify-content: space-around;
+    width: auto;
+    img{
+        width:150px ;
+        display: inline;
+        align-items: center;
+        filter: $shadowImages;
+    }
+    }
+
+
+
+    @media screen and (min-width:800px){
+        .logo{
+            width: 200px;
+            display: flex;
+            margin: 10px 0px 0px 0px;    
+            }
+            
+            main{
+                display: flexbox;
+                margin: 100px;
+                text-align: center;
+                font-size: 150%;
+                h1{
+                    justify-content: center;
+                    font-size: $titulo;
+                    margin: 20px;
+                }
+                
+                #pIndex{
+                    margin-top: 30px;
+                    width: auto;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+            }
+    
+    
+            .turnoYa{
+                display:inline;
+                text-align: center;
+                text-decoration: none;
+                border: 10% solid white;
+                background-color: white;
+                border-radius: 50px;}
+    
+                .obrasSociales{
+                    display: flex;
+                    justify-content: center;
+                    justify-content: space-around;
+                }
+    
+                .marcas{
+                    width:30%;
+                    height:30%;
+                    display: flex;
+                    justify-content: space-around;
+                    width: auto;
+                }
+    
+    }

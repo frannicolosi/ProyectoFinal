@@ -1,0 +1,36 @@
+//FOOTER
+footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 25% );
+    background-color: #212529;
+   
+    
+    div{
+        display: grid;
+        justify-content: center;
+        
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 11px;
+            margin-left: 10px;
+           
+            span{
+                
+                margin-left: 5px;
+            }
+            
+        }
+        p{
+            font-size: 100%;
+            align-items: center;
+            margin-left: 10px;
+        }
+        p.derechosReservados{
+            font-size: 8px;
+        }
+    }
+    
+}
+
